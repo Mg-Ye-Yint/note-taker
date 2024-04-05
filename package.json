@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.0",
+    "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.13",
-    "@mui/material": "^5.15.13",
-    "@prisma/client": "^5.11.0",
+    "@mui/material": "^5.15.15",
+    "@prisma/client": "^5.12.1",
     "@types/date-fns": "^2.6.0",
     "axios": "^1.6.8",
     "date-fns": "^3.6.0",
@@ -29,7 +29,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
-    "prisma": "^5.11.0",
+    "prisma": "^5.12.1",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

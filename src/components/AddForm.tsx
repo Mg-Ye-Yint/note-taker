@@ -25,7 +25,7 @@ const AddForm = ({
     if (description.trim() !== "") {
       setLoading(true);
       setNoteBox(false);
-      const data = await axios.post("http://localhost:3000/api/note", {
+      const data = await axios.post("/api/note", {
         title: noteTitle,
         description,
       });

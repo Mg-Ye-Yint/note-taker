@@ -25,12 +25,16 @@ const Adder = ({ notes }: { notes: Note[] }) => {
           return <NotePiece key={index} note={note} />;
         })}
       </div>
-      <p className="fixed text-black left-2 bottom-2 text-center font-semibold">
+      <p
+        className="fixed text-black left-2 bottom-2 text-center font-semibold"
+        onClick={openNoteBox}
+      >
         &copy; 2024 Ye Yint Thway
       </p>
+      {/* <div className="size bg-orange-200 hover:bg-green-50"></div> */}
 
       <AddCircleIcon
-        className="size-[0px] right-2 bottom-2 fixed text-orange-200    hover:text-green-400 rounded-full active:text-green-500"
+        className="size-[50px] right-2 bottom-2 fixed text-orange-200    hover:text-green-400 rounded-full active:text-green-500"
         onClick={openNoteBox}
       />
     </div>
