@@ -1,4 +1,3 @@
-import React from "react";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 
 const Header = () => {

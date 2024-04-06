@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import NotePiece from "./NotePiece";
 import { Note } from "@prisma/client";

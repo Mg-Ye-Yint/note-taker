@@ -54,7 +54,13 @@ const NotePiece = ({ note }: { note: Note }) => {
           setReadNote={setReadNote}
         />
       )}
-      {readNote && <ViewNote setReadNote={setReadNote} note={note} />}
+      {readNote && (
+        <ViewNote
+          setReadNote={setReadNote}
+          setMenuBar={setMenuBar}
+          note={note}
+        />
+      )}
       {callDelete && <DeleteForm setCallDelete={setCallDelete} note={note} />}
     </div>
   );

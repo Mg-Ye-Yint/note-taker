@@ -1,7 +1,6 @@
 import { Note } from "@prisma/client";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import React from "react";
 
 const DeleteForm = ({
   note,
