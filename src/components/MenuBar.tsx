@@ -1,6 +1,5 @@
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteIcon from "@mui/icons-material/Delete";
-import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
+import { FaEdit, FaEye } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 
 const MenuBar = ({
   setEditOpen,
@@ -13,19 +12,22 @@ const MenuBar = ({
 }) => {
   return (
     <div className="flex flex-col">
-      <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-        <RemoveRedEyeIcon
-          className="hover:text-green-400 hover:bg-gray-400 active:text-green-500 active:bg-gray-500 rounded-md"
+      <div className="flex flex-col gap-[4px] items-center justify-center">
+        <FaEye
+          className="hover:text-green-400 shrink-0 hover:bg-gray-400 active:text-green-500 active:bg-gray-500 rounded-md"
+          size={20}
           onClick={() => setReadNote(true)}
         />
-        <EditIcon
-          className="hover:text-yellow-400 hover:bg-gray-400 active:text-yellow-500 active:bg-gray-500 rounded-md"
+        <FaEdit
+          className="hover:text-yellow-400 shrink-0 hover:bg-gray-400 active:text-yellow-500 active:bg-gray-500 rounded-md"
+          size={20}
           onClick={() => {
             setEditOpen(true);
           }}
         />
-        <DeleteIcon
-          className="hover:text-red-700 hover:bg-gray-400 active:text-red-800 active:bg-gray-500 rounded-md"
+        <MdDelete
+          className="hover:text-red-70 shrink-0 hover:bg-gray-400 active:text-red-800 active:bg-gray-500 rounded-md"
+          size={20}
           onClick={() => {
             setCallDelete(true);
           }}

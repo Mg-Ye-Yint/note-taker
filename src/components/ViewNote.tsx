@@ -1,6 +1,6 @@
 import { Note } from "@prisma/client";
 import { format } from "date-fns";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { FaArrowLeft } from "react-icons/fa6";
 import { enUS } from "date-fns/locale";
 
 const ViewNote = ({
@@ -28,7 +28,7 @@ const ViewNote = ({
             <p className="m-1">{note.description}</p>
           </div>
           <div className="flex flex-row justify-between items-center w-full">
-            <ArrowBackIcon
+            <FaArrowLeft
               className="text-blue-800 font-semibold hover:bg-gray-400 rounded-sm active:bg-gray-500 active:text-blue-900"
               onClick={back}
             />

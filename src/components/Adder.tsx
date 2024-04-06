@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import AddCircleIcon from "@mui/icons-material/AddCircle";
+import { IoMdAddCircle } from "react-icons/io";
 import NotePiece from "./NotePiece";
 import { Note } from "@prisma/client";
 import AddForm from "./AddForm";
@@ -31,9 +31,8 @@ const Adder = ({ notes }: { notes: Note[] }) => {
       >
         &copy; 2024 Ye Yint Thway
       </p>
-      {/* <div className="size bg-orange-200 hover:bg-green-50"></div> */}
 
-      <AddCircleIcon
+      <IoMdAddCircle
         className="size-[50px] right-2 bottom-2 fixed text-orange-200    hover:text-green-400 rounded-full active:text-green-500"
         onClick={openNoteBox}
       />

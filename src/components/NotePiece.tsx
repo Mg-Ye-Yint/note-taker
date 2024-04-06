@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
+import { useState } from "react";
+import { MdOutlineMenu } from "react-icons/md";
 import { Note } from "@prisma/client";
 import EditForm from "./EditForm";
 import DeleteForm from "./DeleteForm";
@@ -37,8 +37,9 @@ const NotePiece = ({ note }: { note: Note }) => {
             {note.title}
           </p>
 
-          <MenuIcon
-            className="text-black hover:bg-gray-400 active:bg-gray-500 rounded-md z-20"
+          <MdOutlineMenu
+            className="text-black shrink-0 hover:bg-gray-400 active:bg-gray-500 rounded-md z-20"
+            size={20}
             onClick={menuToggle}
           />
         </div>
